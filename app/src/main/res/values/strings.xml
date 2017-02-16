@@ -2,4 +2,6 @@
     <string name="app_name">The Movie Database</string>
     <string name="action_rated">Highest Rated</string>
     <string name="action_popular">Most Popular</string>
+    <string name="action_favorite">Favorites</string>
 </resources>
+

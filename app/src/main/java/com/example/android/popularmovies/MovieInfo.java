@@ -6,13 +6,15 @@ public class MovieInfo {
     String poster;
     String plot;
     int vote;
+    int id;
 
-    public MovieInfo(String title, String release, String plot, String poster, int vote){
+    public MovieInfo(String title, String release, String plot, String poster, int vote, int id){
         this.title = title;
         this.release = release;
         this.plot = plot;
         this.poster = poster;
         this.vote = vote;
+        this.id = id;
     }
 
     public String getTitle() {
@@ -53,5 +55,13 @@ public class MovieInfo {
 
     public void setVote(int vote) {
         this.vote = vote;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

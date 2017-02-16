@@ -56,6 +56,8 @@ public class MovieInfoAdapter extends ArrayAdapter<MovieInfo>{
                 String plot = movieInfo.getPlot();
                 String poster = movieInfo.getPoster();
                 int rating = movieInfo.getVote();
+                int movieid = movieInfo.getId();
+                String id = Integer.toString(movieid);
                 String rate = Integer.toString(rating);
                 String release = movieInfo.getRelease();
                 Log.d("title", title);
@@ -64,6 +66,7 @@ public class MovieInfoAdapter extends ArrayAdapter<MovieInfo>{
                 intent.putExtra("EXTRA_POSTER", poster);
                 intent.putExtra("EXTRA_RATING", rate);
                 intent.putExtra("EXTRA_DATE", release);
+                intent.putExtra("EXTRA_MOVIEID", id);
                 getContext().startActivity(intent);
             }
         });
